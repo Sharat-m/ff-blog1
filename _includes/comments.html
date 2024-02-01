@@ -1,18 +1,22 @@
 <!--  Don't edit anything here. Set your disqus id in _config.yml -->
 
 <div id="comments" class="mt-5">
-    <div id="disqus_thread">
-    </div>
-    <script type="text/javascript">
-        var disqus_shortname = '{{site.disqus}}'; 
-        var disqus_developer = 0;
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    <script>
+        var jv_comments_config = {
+        website_id: 200,
+        is_open: false,
+        position: 'right',
+        
+        };
+        
+        (function () {
+        var d = document, s = d.createElement("script");
+        s.src = "https://widget.jointcomments.com/e/embed.prod.js";
+        if (/MSIE|Trident/.test(window.navigator.userAgent)) {
+        s.src = "https://widget.jointcomments.com/e/embed.prodIE.js";
+        }
+        (d.head || d.body).appendChild(s);
         })();
-    </script>
-    <noscript>
-    Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-    </noscript>
+        </script>
 </div>
+

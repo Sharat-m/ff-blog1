@@ -1,12 +1,12 @@
 # Site
-name: 'Mundana'
-description: 'Mundana is a free Jekyll theme for awesome people like you, Medium like.'
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
+name: 'FareFirst Blog'
+description: 'Book cheap flights by comparing multiple online travel agencies. With a single click explore hundreds of travel agencies. FareFirst also offers multi-city search, flight tracking, price calendar for finding the lowest flight deals and last minute flights.'
+logo: 'logo.svg'
+favicon: 'favicon.ico'
 baseurl: '/ff-blog1'
-disqus: 'demowebsite'
-email: 'Sharat@farefirst.com'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+disqus: 'farefirst-1'
+email: 'support@farefirst.com'
+mailchimp-list: 'https://farefirst.us19.list-manage.com/subscribe/post?u=9d44cc82a4090468daaf05cd6&amp;id=c5714c917d' #Need to fix this
 
 include: ["_pages"]
 permalink: /:title/
@@ -18,23 +18,106 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   
+  
 authors:
-    sal:
-      name:           Sal
-      site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar1.jpg
-      bio:            "Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!"
-      email:          wowthemesnet@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
+    vishal:
+      key:            vishal
+      name:           Vishal Vijay
+      site:           https://www.farefirst.com
+      avatar:         authors/vishal.jpg
+      bio:            "BackBone@FareFirst. I eat bugs for breakfast, lunch, & dinner."
+      email:          vishal@farefirst.com
+      twitter:        https://twitter.com/0vishalvijay0
 
-    jane:
-      name:           Jane
-      site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar2.jpg
-      bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
-      email:          fakemail@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
- 
+    yajnesh:
+      key:            yajnesh
+      name:           Yajnesh Talapady
+      site:           https://www.farefirst.com
+      avatar:         authors/yajnesh.jpg
+      bio:            "Trailblazer@FareFirst. Being a geek who loves to travel, He is the go-to person for all his friends and family to make all their travel plans. He loves to discuss sci-fi and movies even if the listener is not interested."
+      email:          yajnesh@farefirst.com
+      twitter:        https://twitter.com/yajnesh_t
+
+    jaseel:
+        key:            jaseel
+        name:           Muhammad Jaseel S
+        site:           https://www.farefirst.com
+        avatar:         authors/jaseel.jpg
+        bio:            "ThinkTank@FareFirst. I think, therefore I am."
+        email:          jaseel@farefirst.com
+        twitter:        https://twitter.com/jaseeljasu
+    
+    varun:
+        key:            varun
+        name:           Varun Raj
+        site:           https://www.farefirst.com
+        avatar:         authors/varun.jpg
+        bio:            "Publicity@FareFirst. I take care of PR"
+        email:          varun@farefirst.com
+        twitter:        https://www.instagram.com/varugram/
+
+    varunkumar:
+        key:            varunkumar
+        name:           Varun Kumar
+        site:           https://www.farefirst.com
+        avatar:         authors/varunkumar.jpeg
+        bio:            "Social@FareFirst. Yes, I posted that social media story."
+        email:          varun@farefirst.com
+        twitter:        https://www.farefirst.com
+
+    farefirst:
+        key:            farefirst
+        name:           FareFirst
+        site:           https://www.farefirst.com
+        avatar:         authors/farefirst.png
+        bio:            "Trusted by a million people around the globe."
+        email:          help@farefirst.com
+        twitter:        https://twitter.com/farefirst
+
+    sharat:
+        key:            sharat
+        name:           Sharat
+        site:           https://www.farefirst.com
+        avatar:         authors/sharatkumar.jpg
+        bio:            "WebDev@FareFirst. Web deployment during weekdays, travel diaries on weekends"
+        email:          sharat@farefirst.com
+        twitter:        https://twitter.com/farefirst
+
+    yojan:
+        key:            yojan
+        name:           Yojan
+        site:           https://www.farefirst.com
+        avatar:         authors/yojan.jpg
+        bio:            "Android@FareFirst. FareFirst's code keeps me steady, My motorcycle keeps me ready."
+        email:          yojan@farefirst.com
+        twitter:        https://twitter.com/farefirst
+
+    rilwan:
+        key:            rilwan
+        name:           Mohammed Rilwan Ibrahim 
+        site:           https://www.farefirst.com
+        avatar:         authors/rilwan.jpg
+        bio:            "GameDev@FareFirst. I build worlds, and I invite players to explore them."
+        email:          rilwan@farefirst.com
+        twitter:        https://twitter.com/farefirst
+
+    ajmal:
+        key:            ajmal
+        name:           Muhammad Ajmal P M
+        site:           https://www.farefirst.com
+        avatar:         authors/ajmal.jpg
+        bio:            "Gamedev@FareFirst. In code we trust, bugs we bust!."
+        email:          ajmal@farefirst.com
+        twitter:        https://twitter.com/farefirst
+
+    prashnitha:
+        key:            prashnitha
+        name:           Prashnitha
+        site:           https://www.farefirst.com
+        avatar:         authors/prashnitha.jpg
+        bio:            "iOS@FareFirst. Code, crash, learn, repeat."
+        email:          prashnitha@farefirst.com
+        twitter:        https://twitter.com/farefirst
 # Defaults
 defaults:
 
@@ -43,8 +126,8 @@ defaults:
       path: "_posts"
     values:
       layout: post
-      author: sal
-      avatar: /assets/images/avatar1.jpg
+      author: yajnesh
+      avatar: authors/yajnesh.jpg
       
   # all pages
   - scope:
@@ -62,4 +145,4 @@ paginate: 10
 
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+exclude: [README.md, Gemfile, Dockerfile, cloudbuild.yaml, gcp_setup, nginx]

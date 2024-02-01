@@ -1,0 +1,14 @@
+{% assign start_second = 0 %}
+{% if include.start %}
+{% assign start_second=include.start %}
+{% endif %}
+
+{% capture final_url %}https://www.youtube.com/embed/{{include.videoId}}?rel=0&showinfo=0&start={{start_second}}{% endcapture %}
+
+{% if include.end %}
+{% capture final_url %}{{final_url}}&end={{include.end}}{% endcapture %}
+{% endif %}
+
+<div class="embed-responsive embed-responsive-16by9 my-3">
+    <iframe class="embed-responsive-item" src="{{final_url}}" allowfullscreen></iframe>
+</div>
